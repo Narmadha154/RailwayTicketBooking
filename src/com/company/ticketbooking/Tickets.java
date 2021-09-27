@@ -1,20 +1,11 @@
 package com.company.ticketbooking;
 
 public class Tickets {
-    private String berth;
-    static int availableLowerBerth=1;
-    static int availableUpperBerth=1;
-    static int availableMiddleBerth=1;
-    static int availableRacTickets=1;
-    static int availableWaitingList=1;
-
-    public String getBerth() {
-        return berth;
-    }
-
-    public void setBerth(String berth) {
-        this.berth = berth;
-    }
+    static int availableLowerBerth=21;
+    static int availableUpperBerth=21;
+    static int availableMiddleBerth=21;
+    static int availableRacTickets=18;
+    static int availableWaitingList=10;
 
     public static int getAvailableLowerBerth() {
         return availableLowerBerth;

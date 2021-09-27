@@ -19,4 +19,18 @@ public class TicketBooker{
          bookedTicketList.add(p.passengerId);
          System.out.println("-----------------Booked successfully");
      }
+     public static void addToRac(Passenger p,int racInfo,String allottedBerth){
+         p.setNumber(racInfo);
+         p.setAllotted(allottedBerth);
+         passengers.put(p.passengerId,p);
+         racList.add(p.passengerId);
+         System.out.println("---------------added to rac successfully");
+     }
+    public static void addToWaitingList(Passenger p,int waitingListInfo,String allottedBerth){
+        p.setNumber(waitingListInfo);
+        p.setAllotted(allottedBerth);
+        passengers.put(p.passengerId,p);
+        waitingList.add(p.passengerId);
+        System.out.println("------------added to waiting list successfully");
+    }
 }

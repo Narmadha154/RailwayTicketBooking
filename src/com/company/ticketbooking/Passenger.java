@@ -64,4 +64,7 @@ public class Passenger {
     public void setBerthPreference(String berthPreference) {
         this.berthPreference = berthPreference;
     }
+    public String toString(){
+        return this.passengerId+"   "+this.name+"   "+this.age+"   "+this.number+this.allotted;
+    }
 }
